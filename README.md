@@ -30,9 +30,10 @@ Feature selection, focusing on key emission variables and temperature data.
 ### Modeling:
 
 Several machine learning models were applied to predict the year of the 2°C breach, including:
-Linear Regression
-Random Forest
-XGBoost
+ - Linear Regression
+ - Random Forest
+ - XGBoost
+   
 To optimize the performance of these models, we performed hyperparameter tuning using techniques such as grid search and cross-validation. For instance, in the Random Forest model, we tuned parameters like the number of trees, maximum depth, and the minimum samples required to split a node, which allowed us to improve the accuracy and robustness of our predictions.
 
 Each model was evaluated based on key metrics such as Mean Absolute Error (MAE) and R-squared (R²) to determine the accuracy and reliability of the predictions. After comparing the performance of the models, we identified that the Random Forest model provided the best balance between bias and variance, making it the most reliable for our final predictions.
