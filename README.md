@@ -33,7 +33,9 @@ Several machine learning models were applied to predict the year of the 2°C bre
 Linear Regression
 Random Forest
 XGBoost
-Each model was evaluated for accuracy, and predictions were made based on the best-performing model.
+To optimize the performance of these models, we performed hyperparameter tuning using techniques such as grid search and cross-validation. For instance, in the Random Forest model, we tuned parameters like the number of trees, maximum depth, and the minimum samples required to split a node, which allowed us to improve the accuracy and robustness of our predictions.
+
+Each model was evaluated based on key metrics such as Mean Absolute Error (MAE) and R-squared (R²) to determine the accuracy and reliability of the predictions. After comparing the performance of the models, we identified that the Random Forest model provided the best balance between bias and variance, making it the most reliable for our final predictions.
 
 ### Analysis:
 
@@ -41,7 +43,7 @@ Tableau was used to visualize temperature trends and emission data across differ
 
 ### Interactive UI:
 
-A Flask-based web application was developed to present the findings interactively. Users can input data, view predictions, and explore Tableau visualizations directly from the application.
+To make our analysis accessible and interactive, we developed a Flask-based web application. This UI allows users to input data, view predictions, and explore the visualizations we created in Tableau. The application provides an easy way for   to interact users with the model and understand the potential future impacts of current emission trends.
 
 ## Results
 The models predict the year when the global temperature is expected to breach the 2°C threshold, offering critical insights into future climate change scenarios. The combination of machine learning and visual analytics provides a comprehensive tool for understanding and addressing global warming.
